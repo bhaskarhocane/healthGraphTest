@@ -11,7 +11,7 @@ import healthGraph.base.TestBaseSetup;
 
 public class TestScenario1 extends TestBaseSetup {
 
-	// @Test(description="verify logo and Nav bar")
+	@Test(description="verify logo and Nav bar")
 	public void test1() {
 
 		String[] navBarOptions = { "Guide", "API", "Pricing", "Maps", "Our Initiatives", "Partners", "Blog",
@@ -25,7 +25,7 @@ public class TestScenario1 extends TestBaseSetup {
 		}
 	}
 
-	// @Test(description="Search City -ve")
+	@Test(description="Search City -ve")
 	public void test2() {
 		String cityName = "CityThatDoesn'tExist";
 
@@ -35,7 +35,7 @@ public class TestScenario1 extends TestBaseSetup {
 		Assert.assertTrue(cityListWeb.verifyNotFound());
 	}
 
-//	@Test(description = "Search City +ve")
+	@Test(description = "Search City +ve")
 	public void test3() {
 		String cityName = "Mumbai";
 
